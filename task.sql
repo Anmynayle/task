@@ -3,17 +3,18 @@ CREATE TABLE "task" (
   "title" varchar NOT NULL,
   "description" text,
   "complet" boolean DEFAULT false,
-  "fecha_inicio" date,
-  "fecha_fin" date
+  "date_init" date,
+  "date_end" date
 );
+
 -- insert
 insert into  task 
 (id,
  title,
  description,
  complet,
- fecha_inicio,
- fecha_fin 
+ date_init,
+ date_end  
  ) values
  ('92f5d1e0-9007-4ec4-922e-5a1a5628f5e9',
   'crudreact',
